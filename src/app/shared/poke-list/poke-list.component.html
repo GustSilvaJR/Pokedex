@@ -1,0 +1,19 @@
+<ng-template ngIf="listPokemons.length === 0">
+    <img *ngIf=apiError class="error" src="../../../assets/error/erro.png" alt="Erro ao carregar imagem" />
+    <a class="pokemon" [routerLink]="['details', pokemon.status.id]" *ngFor="let pokemon of listPokemons">
+        <section class="pokemon__status">
+            <h2>
+                {{pokemon.name}}
+            </h2>
+    
+            <ul>
+                <li *ngFor="let status of pokemon.status.types">{{status.type.name}}</li>
+            </ul>
+        </section>
+    
+        <section class="pokemon__image">
+            <img src={{pokemon.status.sprites.front_default}} alt="Bulbassaur" />
+        </section>
+    </a>
+    
+</ng-template>
