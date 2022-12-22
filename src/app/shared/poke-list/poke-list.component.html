@@ -1,5 +1,5 @@
 <ng-template ngIf="listPokemons.length === 0">
-    <img *ngIf=apiError class="error" src="../../../assets/error/erro.png" alt="Erro ao carregar imagem" />
+    <img *ngIf=apiError class="error" src="assets/error/erro.png" alt="Erro ao carregar imagem" />
     <a class="pokemon" [routerLink]="['details', pokemon.status.id]" *ngFor="let pokemon of listPokemons">
         <section class="pokemon__status">
             <h2>
