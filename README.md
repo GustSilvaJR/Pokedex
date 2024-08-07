@@ -40,6 +40,7 @@ As animações são fornecidas pela biblioteca [Magic Animation CSS3](https://ww
 <div class="magic puffIn">
   <!-- Conteúdo -->
 </div>
+```
 
 ## Contribuição
 
